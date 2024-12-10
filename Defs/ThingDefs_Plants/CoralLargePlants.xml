@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Trees -->
+
+<ThingDef ParentName="TreeBase">
+    <defName>pphhyy_CoralBiome_Plant_CoralAnemoneTree</defName>
+    <label>Coral Anemone Tree</label>
+    <description>coral tuber with an Anemone on top.</description>
+    <graphicData>
+      <texPath>Plants/CoralAnemoneTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.15, 0.3, 0.15)</volume>
+          <offset>(0,0,-0.38)</offset>
+        </shadowData>
+    </graphicData>
+    <altitudeLayer>Blueprint</altitudeLayer>
+    <statBases>
+      <Beauty>2</Beauty>
+      <BeautyOutdoors>2</BeautyOutdoors>
+    </statBases>
+    <ingestible />
+    <plant>
+      <growDays>20</growDays>
+      <harvestedThingDef>WoodLog</harvestedThingDef>
+      <visualSizeRange>1.0~3.0</visualSizeRange>
+      <harvestWork>800</harvestWork>
+      <harvestYield>27</harvestYield>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="TreeBase">
+    <defName>pphhyy_CoralBiome_Plant_MushroomCoralTree</defName>
+    <label>Mushroom Coral Tree</label>
+    <description>A large conifer covered with prickly pine cones. It grows in a distinctive conical shape.</description>
+    <graphicData>
+      <texPath>Plants/MushroomCoralTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.15, 0.3, 0.15)</volume>
+          <offset>(0,0,-0.38)</offset>
+        </shadowData>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <altitudeLayer>Blueprint</altitudeLayer>
+    <statBases>
+      <Beauty>2</Beauty>
+      <BeautyOutdoors>2</BeautyOutdoors>
+    </statBases>
+    <ingestible />
+    <plant>
+      <growDays>20</growDays>
+      <harvestedThingDef>WoodLog</harvestedThingDef>
+      <visualSizeRange>1.0~3.0</visualSizeRange>
+      <harvestWork>800</harvestWork>
+      <harvestYield>27</harvestYield>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="TreeBase">
+    <defName>pphhyy_CoralBiome_Plant_CoralNobilisTree</defName>
+    <label>Coral Nobilis Tree</label>
+    <description>A large conifer covered with prickly pine cones. It grows in a distinctive conical shape.</description>
+    <graphicData>
+      <texPath>Plants/CoralNobilisTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.15, 0.3, 0.15)</volume>
+          <offset>(0,0,-0.38)</offset>
+        </shadowData>
+    </graphicData>
+    <altitudeLayer>Blueprint</altitudeLayer>
+    <statBases>
+      <Beauty>2</Beauty>
+      <BeautyOutdoors>2</BeautyOutdoors>
+    </statBases>
+    <ingestible />
+    <plant>
+      <growDays>20</growDays>
+      <harvestedThingDef>WoodLog</harvestedThingDef>
+      <visualSizeRange>0.2~1.5</visualSizeRange>
+      <harvestWork>800</harvestWork>
+      <harvestYield>27</harvestYield>
+    </plant>
+  </ThingDef>
+
+  <!-- <ThingDef ParentName="TreeBase">
+    <defName>Plant_GuldenShrub</defName>
+    <label>Gulden Shrub</label>
+    <description>A large conifer covered with prickly pine cones. It grows in a distinctive conical shape.</description>
+    <graphicData>
+      <texPath>Plants/GuldenShrub</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+        <shadowData>
+          <volume>(0.15, 0.3, 0.15)</volume>
+          <offset>(0,0,-0.38)</offset>
+        </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>8</Beauty>
+      <BeautyOutdoors>8</BeautyOutdoors>
+    </statBases>
+    <ingestible />
+    <plant>
+      <growDays>15</growDays>
+      <harvestedThingDef>WoodLog</harvestedThingDef>
+      <visualSizeRange>1~1.8</visualSizeRange>
+      <harvestWork>800</harvestWork>
+      <harvestYield>15</harvestYield>
+      <wildClusterWeight>35</wildClusterWeight>
+    </plant>
+  </ThingDef> -->
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>fertileCoralSand</defName>
+    <label>fertile Coral Sand</label>
+    <texturePath>Terrain/Surfaces/CoralSoil</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>350</renderPrecedence>
+    <pathCost>4</pathCost>
+    <statBases>
+      <Beauty>1</Beauty>
+      <BeautyOutdoors>1</BeautyOutdoors>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <!-- <scatterType>SoftDry</scatterType> -->
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <generatedFilth>Filth_Sand</generatedFilth>
+    <fertility>1.0</fertility>
+    <takeFootprints>True</takeFootprints>
+    <tools>
+      <li>
+        <label>sand</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>SandInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+  </TerrainDef>
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>RichCoralSand</defName>
+    <label>rich soil</label>
+    <texturePath>Terrain/Surfaces/RichCoralSand</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>335</renderPrecedence>
+    <pathCost>2</pathCost>
+    <statBases>
+      <Beauty>1</Beauty>
+      <BeautyOutdoors>1</BeautyOutdoors>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <generatedFilth>Filth_Sand</generatedFilth>
+    <fertility>1.4</fertility>
+    <takeFootprints>True</takeFootprints>
+    <tools>
+      <li>
+        <label>sand</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>SandInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+    <tags>
+      <li>Soil</li>
+    </tags>
+  </TerrainDef>
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>ShoreCoralSand</defName>
+    <label>Shore Coral Sand</label>
+    <texturePath>Terrain/Surfaces/ShoreCoralSand</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>350</renderPrecedence>
+    <pathCost>4</pathCost>
+    <statBases>
+      <Beauty>1</Beauty>
+      <BeautyOutdoors>1</BeautyOutdoors>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <!-- <scatterType>SoftDry</scatterType> -->
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>Diggable</li>
+    </affordances>
+    <generatedFilth>Filth_Sand</generatedFilth>
+    <fertility>0.10</fertility>
+    <takeFootprints>True</takeFootprints>
+    <tools>
+      <li>
+        <label>sand</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>SandInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+  </TerrainDef>
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>CoralGravel</defName>
+    <label>stony soil</label>
+    <texturePath>Terrain/Surfaces/CoralGravel</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>320</renderPrecedence>
+    <pathCost>2</pathCost>
+    <statBases>
+      <Beauty>-3</Beauty>
+      <BeautyOutdoors>0</BeautyOutdoors>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <scatterType>Rocky</scatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <generatedFilth>Filth_Dirt</generatedFilth>
+    <fertility>0.7</fertility>
+    <takeFootprints>True</takeFootprints>
+    <tools>
+      <li>
+        <label>gravel</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>GravelInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+    <tags>
+      <li>Soil</li>
+    </tags>
+  </TerrainDef>
+
+  <TerrainDef ParentName="WaterDeepBase">
+    <defName>CoralWaterDeep</defName>
+    <label>deep water</label>
+    <renderPrecedence>395</renderPrecedence>
+  </TerrainDef>
+
+  <TerrainDef ParentName="WaterDeepBase">
+    <defName>CoralWaterOceanDeep</defName>
+    <label>deep ocean water</label>
+    <renderPrecedence>397</renderPrecedence>
+  </TerrainDef>
+
+</Defs>

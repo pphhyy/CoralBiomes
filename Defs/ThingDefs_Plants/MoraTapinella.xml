@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="PlantBase" Name="MoraTapinellaBase" Abstract="True">
+    <statBases>
+      <BeautyOutdoors>2</BeautyOutdoors>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Plants/MoraTapinella</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <growDays>10</growDays>
+      <dieIfLeafless>false</dieIfLeafless>
+      <!-- <harvestWork>400</harvestWork>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>MedicineGuldenHerbal</harvestedThingDef>
+      <harvestYield>1</harvestYield> -->
+      <topWindExposure>0.1</topWindExposure>
+      <visualSizeRange>0.2~0.6</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <allowAutoCut>false</allowAutoCut>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="MoraTapinellaBase">
+    <defName>SkyRim_Plant_MoraTapinella</defName>
+    <label>Mora Tapinella</label>
+    <description>Nightshade is an excellent poison ingrediant, usually growing around death. Although it still needs light to grow which is why you wont find it in the dark places of the world.</description>
+    <plant>
+      <growDays>7</growDays>
+      <maxMeshCount>4</maxMeshCount>
+      <sowWork>800</sowWork>
+      <sowMinSkill>8</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <purpose>Health</purpose>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="MoraTapinellaBase">
+    <defName>SkyRim_Plant_MoraTapinellaWild</defName>
+    <label>wild healroot</label>
+    <description>Nightshade is an excellent poison ingrediant, usually growing around death. Although it still needs light to grow which is why you wont find it in the dark places of the world.</description>
+    <neverMultiSelect>false</neverMultiSelect>
+    <plant>
+      <wildClusterRadius>4</wildClusterRadius>
+      <wildClusterWeight>40</wildClusterWeight>
+    </plant>
+  </ThingDef>
+
+</Defs>
