@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<Defs>
+
+    <!--__Raw Plants__-->
+
+<!-- Lumen Rice Raw -->
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>pphhyy_RawLumenRice</defName>
+    <label>lumen rice</label>
+    <description>Raw Lumen rice.</description>
+    <soundInteract>Grain_Drop</soundInteract>
+    <soundDrop>Grain_Drop</soundDrop>
+    <graphicData>
+      <texPath>Things/Item/Resource/PlantFoodRaw/Rice</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>Seed</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>40</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!-- Raw Bulb Tubers -->
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>pphhyy_RawBulbTubers</defName>
+    <label>bulb tubers</label>
+    <description>Raw corn.</description>
+    <soundInteract>Grain_Drop</soundInteract>
+    <soundDrop>Grain_Drop</soundDrop>
+    <possessionCount>10</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Resource/PlantFoodRaw/Corn</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!-- Raw Tubers -->
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>pphhyy_RawTubers</defName>
+    <label>tubers</label>
+    <description>Raw Tubers.</description>
+    <possessionCount>10</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Resource/PlantFoodRaw/Potatoes</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

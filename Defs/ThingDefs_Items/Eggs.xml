@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+
+<Defs>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>EggCoralCrab</defName>
+		<label>coral crab eggs</label>
+		<description>Coral crab eggs from the coral biome.</description>
+		<graphicData>
+		  <texPath>Eggs/CoralCrabEggs</texPath>
+		  <drawSize>0.5</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>1.5</MarketValue>
+		</statBases>
+		<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>pphhyy_CoralCrab</hatcherPawn>
+      </li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>EggHorseShoeCrab</defName>
+		<label>horseshoe crab eggs</label>
+		<description>Horseshoe crab eggs from the coral biome.</description>
+		<graphicData>
+		  <texPath>Eggs/CoralCrabEggs</texPath>
+		  <drawSize>0.5</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>1.5</MarketValue>
+		</statBases>
+		<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>pphhyy_CoralCrab</hatcherPawn>
+      </li>
+		</comps>
+	</ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggSeaTurtleFertilized</defName>
+    <label>sea turtle (fert.)</label>
+    <description>A fertilized sea turtle egg. If all goes well, it should hatch into a baby sea turtle. It can be eaten raw, but it's much better cooked.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+      <color>(245,245,245)</color>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>23.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>pphhyy_SeaTurtle</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>EggSeaHorse</defName>
+		<label>sea horse eggs</label>
+		<description>Sea horse eggs from the coral biome.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+		  <drawSize>0.5</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>1.5</MarketValue>
+		</statBases>
+		<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>pphhyy_SeaHorse</hatcherPawn>
+      </li>
+		</comps>
+	</ThingDef>
+
+</Defs>

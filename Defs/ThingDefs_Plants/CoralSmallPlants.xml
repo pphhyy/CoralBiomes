@@ -78,7 +78,8 @@
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>1.80</drawSize>
       <shadowData>
-        <volume>(0.55, 0.2, 0.2)</volume>
+        <volume>(0.3, 0.1, 0.1)</volume>
+        <offset>(0,0,-0.60)</offset>
       </shadowData>
     </graphicData>
     <uiIconScale>0.85</uiIconScale>
@@ -110,7 +111,7 @@
       <fertilityMin>0.05</fertilityMin>
       <fertilitySensitivity>0</fertilitySensitivity>
       <growDays>4</growDays>
-      <leaflessGraphicPath>Things/Plant/Moss_Leafless</leaflessGraphicPath>
+      <leaflessGraphicPath>Plant/Moss_Leafless</leaflessGraphicPath>
       <harvestWork>60</harvestWork>
       <maxMeshCount>1</maxMeshCount>
       <visualSizeRange>0.4~2.0</visualSizeRange>
@@ -147,7 +148,7 @@
 
   <ThingDef ParentName="PlantBase">
     <defName>pphhyy_CoralBiome_Plant_WildCoral</defName>
-    <label>WildCoral</label>
+    <label>Wild Coral</label>
     <description>Tangled, thorny, woody shoots covered with leaves. Brambles grow in clusters, and slow down anyone moving over them. These Gulden brambles are quite pretty.</description>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
@@ -395,5 +396,147 @@
     </plant>
   </ThingDef> -->
 
+  <!-- Eatable plants -->
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_LumenRice</defName>
+    <label>lumen rice plant</label>
+    <description>PLACEHOLDER</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.175</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Farmables/LumenRice</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Things/Plant/RicePlant_Immature</immatureGraphicPath>
+      <dieIfLeafless>true</dieIfLeafless>
+      <maxMeshCount>4</maxMeshCount>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>pphhyy_RawLumenRice</harvestedThingDef>
+      <harvestYield>6</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>3</growDays>
+      <visualSizeRange>0.5~0.8</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_Tubers</defName>
+    <label>tubers plant</label>
+    <description>PLACEHOLDER</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.25</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Farmables/Tubers</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Things/Plant/PotatoPlant_Immature</immatureGraphicPath>
+      <fertilitySensitivity>0.4</fertilitySensitivity>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>pphhyy_RawTubers</harvestedThingDef>
+      <harvestYield>11</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>5.8</growDays>
+      <visualSizeRange>0.5~1.05</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_BulbTubers</defName>
+    <label>bulb tubers plant</label>
+    <description>PLACEHOLDER</description>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Nutrition>0.4</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Farmables/BlubTubers</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <fertilityMin>0.70</fertilityMin>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>pphhyy_RawBulbTubers</harvestedThingDef>
+      <harvestYield>22</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+      </sowTags>
+      <topWindExposure>0.35</topWindExposure>
+      <growDays>11.3</growDays>
+      <immatureGraphicPath>Things/Plant/CornPlant_Immature</immatureGraphicPath>
+      <visualSizeRange>0.5~1.4</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>Plant_CoralHealroot</defName>
+    <label>coral healroot</label>
+    <description>PLACEHOLDER</description>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Farmables/CoralHealRoot</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <immatureGraphicPath>Things/Plant/Healroot_Immature</immatureGraphicPath>
+      <dieIfLeafless>false</dieIfLeafless>
+      <harvestWork>400</harvestWork>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>MedicineHerbal</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+      <topWindExposure>0.1</topWindExposure>
+      <visualSizeRange>0.5~1.0</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <allowAutoCut>false</allowAutoCut>
+       <growDays>7</growDays>
+      <sowWork>800</sowWork>
+      <sowMinSkill>8</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <purpose>Health</purpose>
+    </plant>
+  </ThingDef>
 
 </Defs>

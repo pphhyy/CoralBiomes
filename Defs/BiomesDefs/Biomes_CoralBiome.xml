@@ -4,25 +4,38 @@
   <BiomeDef>
     <defName>CoralBiome</defName>
     <label>CoralBiome</label>
-    <description>Forests of coniferous trees. Despite the harsh winters, boreal forests sustain a diverse population of small and large animals, and have warm summers.</description>
+    <description>PLACEHOLDER</description>
     <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
     <modExtensions>
       <li Class="RegrowthCore.BiomesKitControl">
         <allowOnLand>True</allowOnLand>
         <spawnOnBiomes>
-         <li>
-              <li>Desert</li>
-         </li>
-         <li>
-              <li>TemperateForest</li>
-         </li>
+          <li>
+            <li>Desert</li>
+          </li>
+          <li>
+            <li>TemperateForest</li>
+          </li>
         </spawnOnBiomes>
         <minElevation>0</minElevation>
         <maxElevation>100</maxElevation>
         <frequency>100</frequency>
       </li>
+      <li Class="VFECore.BiomeExtension" MayRequire= "OskarPotocki.VanillaFactionsExpanded.Core">
+        <uniqueRockTypes>
+          <li>CoralStone</li>
+        </uniqueRockTypes>        <!-- These types of rock will be removed from every other biome -->
+        <forceRockTypes>
+          <li>CoralStone</li>
+        </forceRockTypes>        <!-- These types of rock will always spawn in this biome -->
+        <disallowRockTypes>
+          <li>Slate</li>
+        </disallowRockTypes>        <!-- These types of rock will never spawn in this biome -->
+        <onlyAllowForcedRockTypes>false</onlyAllowForcedRockTypes>        <!-- If true (the default), only the forced will ever spawn in this biome -->
+        <forceUniqueRockTypes>true</forceUniqueRockTypes>        <!-- If true (the default), then the unique rocks will also be forced -->
+      </li>
     </modExtensions>
-    <animalDensity>3</animalDensity>
+    <animalDensity>4</animalDensity>
     <plantDensity>0.75</plantDensity>
     <settlementSelectionWeight>0.9</settlementSelectionWeight>
     <movementDifficulty>1</movementDifficulty>
@@ -59,7 +72,7 @@
         <diseaseInc>Disease_MuscleParasites</diseaseInc>
         <commonality>50</commonality>
       </li>
-      
+
       <li>
         <diseaseInc>Disease_AnimalFlu</diseaseInc>
         <commonality>100</commonality>
@@ -125,51 +138,27 @@
       <pphhyy_CoralBiome_Plant_MushroomCoralTree>1</pphhyy_CoralBiome_Plant_MushroomCoralTree>
       <pphhyy_CoralBiome_Plant_CoralNobilisTree>1</pphhyy_CoralBiome_Plant_CoralNobilisTree>
       <pphhyy_CoralBiome_Plant_CoralBush>0.6</pphhyy_CoralBiome_Plant_CoralBush>
-   <!-- <Skyrim_Plant_Clover>4.0</Skyrim_Plant_Clover> -->
-      <!-- <SkyRim_Plant_Fern>3.0</SkyRim_Plant_Fern>
-      <Skyrim_Plant_SkyrimBrambles>2.0</Skyrim_Plant_SkyrimBrambles> -->
-      <Plant_HealrootWild>0.16</Plant_HealrootWild>
+      <Plant_BulbTubers>0.5</Plant_BulbTubers>
+      <Plant_Tubers>0.6</Plant_Tubers>
+      <Plant_LumenRice>0.8</Plant_LumenRice>
+      <Plant_CoralHealroot>0.16</Plant_CoralHealroot>
       <pphhyy_CoralBiome_Plant_CoralTubastraea>1.0</pphhyy_CoralBiome_Plant_CoralTubastraea>
       <pphhyy_CoralBiome_Plant_WildCoral>2.0</pphhyy_CoralBiome_Plant_WildCoral>
-      <!-- <SkyRim_Plant_Thistle>0.2</SkyRim_Plant_Thistle>
-      <SkyRim_Plant_MoraTapinella>0.2</SkyRim_Plant_MoraTapinella>
-      <SkyRim_Plant_BlueMountainFlower>0.2</SkyRim_Plant_BlueMountainFlower>
-      <SkyRim_Plant_RedMountainFlower>0.2</SkyRim_Plant_RedMountainFlower>
-      <SkyRim_Plant_PurpleMountainFlower>0.2</SkyRim_Plant_PurpleMountainFlower> -->
     </wildPlants>
     <wildAnimals>
-      <GuineaPig>0.45</GuineaPig>
-      <Yak>0.06</Yak>
-      <Bison>0.07</Bison>
-      <Horse>0.20</Horse>
-      <Hare>1.0</Hare>
-      <Squirrel>1.0</Squirrel>
-      <Rat>1.0</Rat>
-      <Deer>0.5</Deer>
-      <WildBoar>0.5</WildBoar>
-      <Turkey>0.5</Turkey>
-      <Raccoon>0.5</Raccoon>
-      <Ibex>0.5</Ibex>
-      <Muffalo>0.5</Muffalo>
-      <Alpaca>0.5</Alpaca>
-      <Boomalope>0.4</Boomalope>
-      <Boomrat>0.4</Boomrat>
-      <Tortoise>0.3</Tortoise>
-      <Gazelle>0.3</Gazelle>
-      <Megasloth>0.2</Megasloth>
-      <Rhinoceros>0.1</Rhinoceros>
-      <Bear_Grizzly>0.07</Bear_Grizzly>
-      <Wolf_Timber>0.07</Wolf_Timber>
-      <Fox_Red>0.07</Fox_Red>
-      <Cougar>0.07</Cougar>
-      <Lynx>0.07</Lynx>
-      <Warg>0.07</Warg>
+      <pphhyy_SeaHorse>0.50</pphhyy_SeaHorse>
+      <pphhyy_SeaTurtle>0.30</pphhyy_SeaTurtle>
+      <pphhyy_Starfish>0.40</pphhyy_Starfish>
+      <pphhyy_GiantIsopod>0.20</pphhyy_GiantIsopod>
+      <pphhyy_CoralCrab>0.40</pphhyy_CoralCrab>
+      <pphhyy_CoralJellyfish>0.30</pphhyy_CoralJellyfish>
+      <pphhyy_HorseShoeCrab>0.35</pphhyy_HorseShoeCrab>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
       <li>Alpaca</li>
     </allowedPackAnimals>
   </BiomeDef>
-  
+
 
 </Defs>
