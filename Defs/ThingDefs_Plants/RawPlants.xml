@@ -13,7 +13,7 @@
     <soundInteract>Grain_Drop</soundInteract>
     <soundDrop>Grain_Drop</soundDrop>
     <graphicData>
-      <texPath>Things/Item/Resource/PlantFoodRaw/Rice</texPath>
+      <texPath>RawPlants/LumenRice/LumenRice</texPath>
     </graphicData>
     <statBases>
       <MarketValue>1.1</MarketValue>
@@ -34,12 +34,12 @@
   <ThingDef ParentName="PlantFoodRawBase">
     <defName>pphhyy_RawBulbTubers</defName>
     <label>bulb tubers</label>
-    <description>Raw corn.</description>
+    <description>Raw bulb tubers.</description>
     <soundInteract>Grain_Drop</soundInteract>
     <soundDrop>Grain_Drop</soundDrop>
     <possessionCount>10</possessionCount>
     <graphicData>
-      <texPath>Things/Item/Resource/PlantFoodRaw/Corn</texPath>
+      <texPath>RawPlants/BulbTubers/BulbTubers</texPath>
     </graphicData>
     <statBases>
       <MarketValue>1.1</MarketValue>
@@ -63,7 +63,7 @@
     <description>Raw Tubers.</description>
     <possessionCount>10</possessionCount>
     <graphicData>
-      <texPath>Things/Item/Resource/PlantFoodRaw/Potatoes</texPath>
+      <texPath>RawPlants/Tubers/Tubers</texPath>
     </graphicData>
     <statBases>
       <MarketValue>1.1</MarketValue>

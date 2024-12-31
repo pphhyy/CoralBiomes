@@ -59,7 +59,7 @@
       <trainability>None</trainability>
       <meatLabel>horse meat</meatLabel>
       <hasGenders>true</hasGenders>
-      <packAnimal>false</packAnimal>
+      <packAnimal>true</packAnimal>
       <lifeExpectancy>30</lifeExpectancy>
       <lifeStageAges>
         <li>
@@ -225,7 +225,7 @@
     </statBases>
     <race>
       <body>CrabBody</body>
-      <herdAnimal>false</herdAnimal>
+      <herdAnimal>true</herdAnimal>
       <baseBodySize>0.6</baseBodySize>
       <baseHealthScale>0.6</baseHealthScale>
       <baseHungerRate>0.28</baseHungerRate>
@@ -326,6 +326,7 @@
     <labelPlural>coral crabs</labelPlural>
     <race>pphhyy_CoralCrab</race>
     <combatPower>10</combatPower>
+    <wildGroupSize>3~6</wildGroupSize>
     <alternateGraphicChance>0.8</alternateGraphicChance>
     <alternateGraphics>
       <li>
@@ -339,31 +340,31 @@
       <li>
         <bodyGraphicData>
           <texPath>Animal/CoralCrab/CoralCrab</texPath>
-          <drawSize>0.5</drawSize>
+          <drawSize>1.1</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Animal/CoralCrab/Dessicated_CoralCrab</texPath>
-          <drawSize>0.5</drawSize>
+          <drawSize>1.1</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Animal/CoralCrab/CoralCrab</texPath>
-          <drawSize>0.6</drawSize>
+          <drawSize>1.2</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Animal/CoralCrab/Dessicated_CoralCrab</texPath>
-          <drawSize>0.6</drawSize>
+          <drawSize>1.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Animal/CoralCrab/CoralCrab</texPath>
-          <drawSize>0.8</drawSize>
+          <drawSize>1.5</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Animal/CoralCrab/Dessicated_CoralCrab</texPath>
-          <drawSize>0.8</drawSize>
+          <drawSize>1.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -376,12 +377,13 @@
     <label>sea turtle</label>
     <description>PLACEHOLDER</description>
     <statBases>
-      <MoveSpeed>1.0</MoveSpeed>
+      <MoveSpeed>2.4</MoveSpeed>
       <MarketValue>200</MarketValue>
       <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <ComfyTemperatureMax>50</ComfyTemperatureMax>
+      <CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
     </statBases>
     <uiIconScale>1.25</uiIconScale>
     <tools>
@@ -417,6 +419,7 @@
     </comps>
     <race>
       <body>TurtleLike</body>
+      <packAnimal>true</packAnimal>
       <baseBodySize>0.5</baseBodySize>
       <baseHungerRate>0.0825</baseHungerRate>
       <baseHealthScale>0.6</baseHealthScale>
@@ -468,16 +471,6 @@
       <li>
         <bodyGraphicData>
           <texPath>Animal/SeaTurtle/SeaTurtle</texPath>
-          <drawSize>1.7</drawSize>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Animal/SeaTurtle/Dessicated_SeaTurtle</texPath>
-          <drawSize>1.7</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Animal/SeaTurtle/SeaTurtle</texPath>
           <drawSize>2.2</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
@@ -488,7 +481,17 @@
       <li>
         <bodyGraphicData>
           <texPath>Animal/SeaTurtle/SeaTurtle</texPath>
-          <drawSize>3</drawSize>
+          <drawSize>2.7</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Animal/SeaTurtle/Dessicated_SeaTurtle</texPath>
+          <drawSize>2.7</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Animal/SeaTurtle/SeaTurtle</texPath>
+          <drawSize>3.5</drawSize>
           <shadowData>
             <volume>(0.45, 0.45, 0.45)</volume>
             <offset>(0,0,0)</offset>
@@ -496,7 +499,7 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Animal/SeaTurtle/Dessicated_SeaTurtle</texPath>
-          <drawSize>3</drawSize>
+          <drawSize>3.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -546,6 +549,7 @@
       <foodType>CarnivoreAnimal</foodType>
       <wildness>0.75</wildness>
       <lifeExpectancy>180</lifeExpectancy>
+      <herdAnimal>true</herdAnimal>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
@@ -585,25 +589,16 @@
     <label>coral jellyfish</label>
     <race>pphhyy_CoralJellyfish</race>
     <combatPower>70</combatPower>
+    <wildGroupSize>3~6</wildGroupSize>
     <ecoSystemWeight>0.30</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
           <texPath>Animal/CoralJellyFish/CoralJellyFish</texPath>
-          <drawSize>1</drawSize>
+          <drawSize>1.2</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Animal/CoralJellyFish/Dessicated_Tortoise</texPath>
-          <drawSize>1</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Animal/CoralJellyFish/CoralJellyFish</texPath>
-          <drawSize>1.2</drawSize>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Animal/CoralJellyFish/Dessicated_CoralJellyFish</texPath>
           <drawSize>1.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -611,14 +606,20 @@
         <bodyGraphicData>
           <texPath>Animal/CoralJellyFish/CoralJellyFish</texPath>
           <drawSize>1.5</drawSize>
-          <shadowData>
-            <volume>(0.45, 0.45, 0.45)</volume>
-            <offset>(0,0,0)</offset>
-          </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Animal/CoralJellyFish/Dessicated_CoralJellyFish</texPath>
           <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Animal/CoralJellyFish/CoralJellyFish</texPath>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Animal/CoralJellyFish/Dessicated_CoralJellyFish</texPath>
+          <drawSize>1.8</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -708,7 +709,7 @@
     <label>starfish</label>
     <race>pphhyy_Starfish</race>
     <combatPower>20</combatPower>
-    <wildGroupSize>3~6</wildGroupSize>
+    <wildGroupSize>3~10</wildGroupSize>
     <ecoSystemWeight>1.70</ecoSystemWeight>
     <alternateGraphicChance>0.8</alternateGraphicChance>
     <alternateGraphics>
@@ -726,31 +727,31 @@
       <li>
         <bodyGraphicData>
           <texPath>Animal/StarFish/StarFish</texPath>
-          <drawSize>1</drawSize>
+          <drawSize>0.4</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Animal/StarFish/Dessicated_StarFish</texPath>
-          <drawSize>1</drawSize>
+          <drawSize>0.4</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Animal/StarFish/StarFish</texPath>
-          <drawSize>1.2</drawSize>
+          <drawSize>0.5</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Animal/StarFish/Dessicated_StarFish</texPath>
-          <drawSize>1.2</drawSize>
+          <drawSize>0.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Animal/StarFish/StarFish</texPath>
-          <drawSize>1.5</drawSize>
+          <drawSize>0.7</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Animal/StarFish/Dessicated_StarFish</texPath>
-          <drawSize>1.5</drawSize>
+          <drawSize>0.7</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -795,11 +796,12 @@
     </tools>
     <race>
       <body>BeetleLikeWithClaw</body>
-      <baseHungerRate>0.35</baseHungerRate>
-      <baseBodySize>1.2</baseBodySize>
+      <baseHungerRate>0.65</baseHungerRate>
+      <baseBodySize>3.6</baseBodySize>
+      <packAnimal>true</packAnimal>
       <baseHealthScale>2.5</baseHealthScale>
       <meatLabel>insect meat</meatLabel>
-      <lifeExpectancy>6</lifeExpectancy>
+      <lifeExpectancy>10</lifeExpectancy>
       <wildness>0.4</wildness>
       <trainability>Advanced</trainability>
       <lifeStageAges>
@@ -833,23 +835,13 @@
     <defName>pphhyy_GiantIsopod</defName>
     <label>giant isopod</label>
     <race>pphhyy_GiantIsopod</race>
-    <combatPower>150</combatPower>
+    <combatPower>200</combatPower>
     <canArriveManhunter>false</canArriveManhunter>
     <ecoSystemWeight>0.30</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
           <texPath>Animal/GiantIsopod/GiantIsopod</texPath>
-          <drawSize>1.8</drawSize>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Animal/GiantIsopod/Dessicated_GiantIsopod</texPath>
-          <drawSize>1.8</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Animal/GiantIsopod/GiantIsopod</texPath>
           <drawSize>2.2</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
@@ -860,11 +852,21 @@
       <li>
         <bodyGraphicData>
           <texPath>Animal/GiantIsopod/GiantIsopod</texPath>
-          <drawSize>3</drawSize>
+          <drawSize>2.7</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Animal/GiantIsopod/Dessicated_GiantIsopod</texPath>
-          <drawSize>3</drawSize>
+          <drawSize>2.7</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Animal/GiantIsopod/GiantIsopod</texPath>
+          <drawSize>3.75</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Animal/GiantIsopod/Dessicated_GiantIsopod</texPath>
+          <drawSize>3.75</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -882,6 +884,7 @@
       <LeatherAmount>5</LeatherAmount>
       <ComfyTemperatureMin>-10</ComfyTemperatureMin>
       <FilthRate>0</FilthRate>
+      <CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
     </statBases>
     <race>
       <body>CrabBody</body>
@@ -999,16 +1002,6 @@
       <li>
         <bodyGraphicData>
           <texPath>Animal/HorseShoeCrab/HorseshoeCrab</texPath>
-          <drawSize>0.7</drawSize>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Animal/HorseShoeCrab/Dessicated_HorseshoeCrab</texPath>
-          <drawSize>0.7</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Animal/HorseShoeCrab/HorseshoeCrab</texPath>
           <drawSize>0.8</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
@@ -1019,11 +1012,21 @@
       <li>
         <bodyGraphicData>
           <texPath>Animal/HorseShoeCrab/HorseshoeCrab</texPath>
-          <drawSize>1.1</drawSize>
+          <drawSize>0.9</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Animal/HorseShoeCrab/Dessicated_HorseshoeCrab</texPath>
-          <drawSize>1.1</drawSize>
+          <drawSize>0.9</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Animal/HorseShoeCrab/HorseshoeCrab</texPath>
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Animal/HorseShoeCrab/Dessicated_HorseshoeCrab</texPath>
+          <drawSize>1.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>

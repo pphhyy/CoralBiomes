@@ -414,7 +414,7 @@
     <pathCost>14</pathCost>
     <ingestible />
     <plant>
-      <immatureGraphicPath>Things/Plant/RicePlant_Immature</immatureGraphicPath>
+      <immatureGraphicPath>Farmables/LumenRice</immatureGraphicPath>
       <dieIfLeafless>true</dieIfLeafless>
       <maxMeshCount>4</maxMeshCount>
       <harvestTag>Standard</harvestTag>
@@ -449,7 +449,7 @@
     <pathCost>14</pathCost>
     <ingestible />
     <plant>
-      <immatureGraphicPath>Things/Plant/PotatoPlant_Immature</immatureGraphicPath>
+      <immatureGraphicPath>Farmables/Tubers</immatureGraphicPath>
       <fertilitySensitivity>0.4</fertilitySensitivity>
       <dieIfLeafless>true</dieIfLeafless>
       <harvestTag>Standard</harvestTag>
@@ -494,7 +494,7 @@
       </sowTags>
       <topWindExposure>0.35</topWindExposure>
       <growDays>11.3</growDays>
-      <immatureGraphicPath>Things/Plant/CornPlant_Immature</immatureGraphicPath>
+      <immatureGraphicPath>Farmables/BlubTubers</immatureGraphicPath>
       <visualSizeRange>0.5~1.4</visualSizeRange>
       <wildOrder>2</wildOrder>
       <purpose>Food</purpose>
@@ -518,7 +518,7 @@
     <pathCost>14</pathCost>
     <ingestible />
     <plant>
-      <immatureGraphicPath>Things/Plant/Healroot_Immature</immatureGraphicPath>
+      <immatureGraphicPath>Farmables/CoralHealRoot</immatureGraphicPath>
       <dieIfLeafless>false</dieIfLeafless>
       <harvestWork>400</harvestWork>
       <harvestTag>Standard</harvestTag>
