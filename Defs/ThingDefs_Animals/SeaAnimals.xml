@@ -420,7 +420,7 @@
     <race>
       <body>TurtleLike</body>
       <packAnimal>true</packAnimal>
-      <baseBodySize>0.5</baseBodySize>
+      <baseBodySize>2.4</baseBodySize>
       <baseHungerRate>0.0825</baseHungerRate>
       <baseHealthScale>0.6</baseHealthScale>
       <foodType>OmnivoreRoughAnimal</foodType>
